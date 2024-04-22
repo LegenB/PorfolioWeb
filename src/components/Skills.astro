@@ -1,0 +1,65 @@
+---
+import UnrealE from "../icons/UnrealE.astro"
+import Playfab from "../icons/Playfab.astro"
+import HTML from "../icons/HTML.astro"
+import CSS from "../icons/CSS.astro"
+import JavaSc from "../icons/JavaSc.astro"
+import TeamWork from "../icons/TeamWork.astro"
+import Comunication from "../icons/Comunication.astro"
+import Bug from "../icons/Bug.astro"
+import Leader from "../icons/Leader.astro"
+import Empatic from "../icons/Empatic.astro"
+
+// Objecto con los Tags
+const TAGS = {
+    TRABAJOEQUIPO:{
+        name:"Trabajo en equipo",
+        class:"bg-blue text-yellow-400",
+        icon: TeamWork
+    },
+    COMINICATION:{
+        name:"Comunicación",
+        class:"bg-blue text-blue-400",
+        icon: Comunication
+    },
+    PROBLEMRESOLUTION:{
+        name:"Resolución de problemas",
+        class:"bg-blue text-red-500",
+        icon: Bug
+    },
+    ADAPTABILITY:{
+        name:"Adaptabilidad",
+        class:"bg-blue",
+        icon: HTML
+
+    },
+    LEADERSHIP:{
+        name:"Liderazgo ",
+        class:"bg-blue text-amber-400",
+        icon: Leader
+
+    },
+    EMPATHY:{
+        name:"Empatía",
+        class:"bg-blue text-pink-500",
+        icon: Empatic
+
+    },
+
+    
+}
+const tags =[TAGS.TRABAJOEQUIPO,TAGS.COMINICATION, TAGS.PROBLEMRESOLUTION, TAGS.LEADERSHIP, TAGS.EMPATHY]
+
+---
+{
+   <ul class="flex gap-x-2 flex-wrap justify-center">
+
+    {tags.map((tag) =>( 
+    <li>
+        <span class={`flex gap-x-2 rounded-full bg-slate-900 px-2 py-1 mb-2 text-xs items-center border border-green-500/30 border-green-600 ${tag.class}`}>
+            <tag.icon class=" size-5 grayscale-0 brightness-100 "/>
+            <p class=" text-gray-300">{tag.name} </p>
+        </span>
+    </li>
+    ))}
+}

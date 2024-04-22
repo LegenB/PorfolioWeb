@@ -1,0 +1,70 @@
+---
+import '@fontsource-variable/onest';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+import 'flowbite';
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="/Logo.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+	</head>
+	<body class="relative">
+		<div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-30%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>	
+		<div class="image bg-fixed bg-no-repeat bg-cover bg-left  absolute top-0 bottom-0 z-[-2] min-h-screen w-full opacity-50"></div>
+			
+		<Header/>
+		<slot />
+		<Footer/>
+		
+	</body>
+</html>
+
+<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+
+
+<style is:global>
+	:root {
+		color-scheme: Light dark;
+	}
+	html {
+		font-family: 'Onest Variable', sans-serif;
+		scroll-behavior: smooth;
+		
+	}
+	body{
+		background: linear-gradient(to top, #14131a, #13151a);
+		display: flex;
+		flex-direction: column;
+		
+
+	}
+	.image{
+		background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg") ;
+	}
+	@media (prefers-reduced-motion: reduce){
+		html{
+			scroll-behavior: ;
+		}
+		
+	}
+	.display-none{
+		@apply hidden;
+	}
+</style>

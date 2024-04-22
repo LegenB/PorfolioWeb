@@ -1,0 +1,195 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import Socialpill from '../components/Socialpill.astro';
+import Cards from '../components/Cards.astro';
+import Likedin from '../icons/Likedin.astro';
+import GitHub from '../icons/Github.astro';
+import Download from '../icons/Download.astro';
+import Carousel from '../components/Carousel.astro'
+import Tecnologias from '../components/Tecnologias.astro';
+import Skills from '../components/Skills.astro';
+import Cards_P from '../components/Cards_P.astro'
+---
+
+<Layout title="Portafolio de Byron H. - Desarrollador y Programador Web"
+	description="Byron Huerta" >
+	<main class=" px-5">
+
+			<section class=" h-screen w-full mx-auto lg:w-[740px]   pt-20 pb-80 lg:py-32">
+				
+				<div class="flex justify-center lg:mb-4">
+					<img class="rounded-full w-44 h-44 mb-3 border-2 border-green-400 transition"src="/images/yo.jpg" alt="photo" >
+				</div>
+				
+				
+				<h1 class="text-white text-xl md:text-3xl lg:text-4xl font-bold flex flex-row gap-4-x pb-4 justify-center">	
+					<a 
+					href="https://www.linkedin.com/in/byron-huerta-olmos-9072b4219/"
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center items-center pl-4" >
+					<div class="text-3xl md:text-4xl lg:text-5xl font-bold">
+						Hola, soy 
+						<span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-lime-300">
+							Byron Huerta
+						</span>
+					</div>
+					</a> 
+				</h1>
+				<h2 class=" text-base md:text-lg lg:text-xl opacity-90 lg:my-5 flex justify-center flex-col lg:flex-row items-center text-wrap">
+					<span class=" mr-0 lg:mr-3  " >Egresado en  Ingeniería en Informática</span> <Badge>Disponible para trabajar</Badge>
+				</h2>
+
+				<nav class="flex gap-4 mt-6 flex-wrap justify-center">
+					<Socialpill href="/Doc/Byron_CV.pdf" download="ByronHuerta_CV">
+						<Download class="size-5  lg:size-6 "/> <p class="text-sm md:text-base">Descargar CV</p>				
+					</Socialpill>
+					<Socialpill href="https://www.linkedin.com/in/byron-huerta-olmos-9072b4219/">
+						<Likedin class="size-5 lg:size-6"/> <p class="text-sm md:text-base">Likedin</p>					
+					</Socialpill>
+					<Socialpill href="https://github.com/LegenB">
+						<GitHub class="size-5 lg:size-6"/> <p class="text-sm md:text-base">GitHub</p>					
+					</Socialpill>
+					
+				</nav>
+				
+			</section>
+		
+		
+		
+			<section id="Experiencia" class="w-full mx-auto lg:w-[740px]  pt-10">
+						
+					<h2 class=" text-2xl mb-5 font-bold"> 
+						
+						Experiencia
+									
+					</h2>
+						
+					<Cards />
+
+
+			</section>
+	
+			<section id="proyectos" class="w-full mx-auto lg:w-[740px] ">
+				<h2 class=" text-2xl mb-5 font-bold"> Poyectos</h2>
+				
+				<Cards_P/>
+				
+				
+
+			</section>
+
+			<section id="Sobre_mi" class="w-full mx-auto lg:w-[740px]">
+				<h2 class=" text-2xl mb-5 font-bold"> Sobre mi</h2>
+				
+
+				<div class="grid mb-8 border rounded-lg shadow-sm border-green-500 md:mb-12 md:grid-cols-2 bg-gray-900">
+					<figure class="flex flex-col col-span-2 items-center justify-center p-8 text-center border-b  rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-gray-900  border-green-500">
+						<Carousel></Carousel>
+					</figure>
+					<figure class="flex flex-col col-span-2 items-center justify-center p-8 text-center border-b  rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-gray-900  border-green-500">
+						<blockquote class="max-w-2xl mx-auto mb-4 lg:mb-8 text-gray-300">
+							<div class="text-base">
+								<p class="my-4 text-pretty">¡Hola! Mi nombre es <span class=" text-lime-300">Byron Huerta</span>, egresado en <span class="text-lime-300/85">Ingeniería en Informática</span> y <span class="text-lime-300/85">Analista Programador Computacional</span>, con una pasión inquebrantable por el desarrollo y el mundo digital</p>
+								<p class="my-4 text-pretty">Destaco en <span class="text-yellow-200/85">colaboración</span> y <span class="text-yellow-200/85">trabajo en equipo</span>, como se evidencia en mi experiencia en <span class="text-yellow-200/95">Arcadius Entertainment</span> y <span class="text-yellow-200/95">Duoc UC</span>, logrando el desarrollo efectivo en las metas de ambos casos.</p>
+								<p class="my-4 text-pretty">Mi capacidad para <span class="text-emerald-400/90">adaptarme rápidamente</span> me han permitido contribuir de manera <span class="text-emerald-400/90">efectiva</span> en proyectos prácticos durante mi formación. Estoy emocionado por la oportunidad de aplicar mis <span class="text-emerald-400">habilidades</span> y <span class="text-emerald-400">crecer profesionalmente</span>, colaborando con un equipo apasionado para<span class=" text-cyan-400"> alcanzar el éxito.</span> </p>
+							</div>
+							
+						</blockquote>
+					</figure>
+					
+					<figure class="flex flex-col col-span-2 md:col-span-1 xl:col-span-1 items-center justify-center p-8 text-center border-b  rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-gray-900 border-green-500">
+						<blockquote class="max-w-2xl mx-auto mb-4 lg:mb-8 text-gray-400">
+							<h3 class="text-lg font-semibold text-white">Habilidades Blandas</h3>
+							<p class="my-4 text-pretty">
+								<Skills/>
+							</p>
+							
+						</blockquote> 
+					</figure>
+					<figure class="flex flex-col col-span-2 md:col-span-1 xl:col-span-1 items-center justify-center p-8 text-center border-b  rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-gray-900  border-green-500">
+						<blockquote class="max-w-2xl mx-auto mb-4 lg:mb-8 text-gray-400">
+							<h3 class="text-lg font-semibold text-white mb-3">Tecnologias</h3>
+							<Tecnologias/>
+						</blockquote>
+					</figure>
+					
+				</div>
+				
+
+			
+
+			</section>
+		
+
+
+		
+		
+	</main>
+
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+	.triangle {
+    border-left: 50% solid transparent;
+    border-right: 50% solid transparent;
+    border-bottom: 100px solid
+}
+</style>

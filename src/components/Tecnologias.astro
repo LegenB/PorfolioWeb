@@ -1,0 +1,96 @@
+---
+import Tailwind from "../icons/Tailwind.astro"
+import UnrealE from "../icons/UnrealE.astro"
+import Playfab from "../icons/Playfab.astro"
+import CloudScrit from "../icons/CloudScript.astro"
+import HTML from "../icons/HTML.astro"
+import CSS from "../icons/CSS.astro"
+import JavaSc from "../icons/JavaSc.astro"
+import Python from "../icons/Python.astro"
+import Cplus from "../icons/C.astro"
+import NodeJS from "../icons/NodeJs.astro"
+import Ast from "../icons/Astr.astro"
+import React from "../icons/React.astro"
+
+// Objecto con los Tags
+const TAGS = {
+    TAILWIND:{
+        name:"Tailwind CSS",
+        class:"bg-blue",
+        icon: Tailwind
+    },
+    UNREALENGINE:{
+        name:"Unreal Enigne 5",
+        class:"bg-blue",
+        icon: UnrealE
+    },
+    PLAYFAB:{
+        name:"PlayFab",
+        class:"bg-blue",
+        icon: Playfab
+    },
+    HTML5:{
+        name:"HTML",
+        class:"bg-blue",
+        icon: HTML
+
+    },
+    CSS:{
+        name:"CSS",
+        class:"bg-blue",
+        icon: CSS
+
+    },
+    JAVASCRIPT:{
+        name:"JavaScript",
+        class:"bg-blue",
+        icon: JavaSc
+
+    },
+    CLOUDSCRIPT:{
+        name:"Cloud Script",
+        class:"bg-blue",
+        icon: CloudScrit
+    },
+    PYTHON:{
+        name:"Python",
+        class:" bg_black",
+        icon: Python
+    },
+    C:{
+        name:"C#",
+        class:" bg_black",
+        icon: Cplus
+    },
+    NodeJS:{
+        name:"Node.js",
+        class:" bg_black",
+        icon: NodeJS
+    },
+    ASTRO:{
+        name:"Astro",
+        class:" bg_black",
+        icon: Ast
+    },
+    REACT:{
+        name:"React",
+        class:"bg_clack",
+        icon: React
+    }
+    
+}
+const tags =[TAGS.TAILWIND,TAGS.REACT ,TAGS.CLOUDSCRIPT, TAGS.HTML5, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.PYTHON, TAGS.C ,TAGS.PLAYFAB,TAGS.UNREALENGINE, TAGS.NodeJS, TAGS.ASTRO ]
+
+---
+{
+   <ul class="flex gap-x-2 flex-wrap justify-center">
+
+    {tags.map((tag) =>( 
+    <li>
+        <span class={`flex gap-x-2 rounded-full bg-slate-900 px-2 py-1 mb-2 text-xs items-center border border-green-500/30 border-green-600 ${tag.class}`}>
+            <tag.icon class=" size-5 grayscale-0 brightness-100 "/>
+            <p class=" text-gray-300">{tag.name} </p>
+        </span>
+    </li>
+    ))}
+}
