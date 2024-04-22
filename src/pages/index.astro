@@ -16,43 +16,69 @@ import Cards_P from '../components/Cards_P.astro'
 	description="Byron Huerta" >
 	<main class=" px-5">
 
-			<section class=" h-screen w-full mx-auto lg:w-[740px]   pt-20 pb-80 lg:py-32">
-				
-				<div class="flex justify-center lg:mb-4">
-					<img class="rounded-full w-44 h-44 mb-3 border-2 border-green-400 transition"src="/images/yo.jpg" alt="photo" >
+			<section class=" h-screen w-full mx-auto lg:w-[740px] pt-20 lg:py-32">
+				<div class=" relative flex justify-center z-10">
+					<div class="  bg-gradient-to-r from-cyan-500/50 to-blue-500/50 border border-sky-300/50 rounded-t-full w-60 pt-4">
+
+						<div class="flex justify-center ">
+							<img class="rounded-t-full w-44 h-44 transition"src="/images/yo.jpg" alt="photo" >
+						</div>
+	
+					</div>
 				</div>
 				
 				
-				<h1 class="text-white text-xl md:text-3xl lg:text-4xl font-bold flex flex-row gap-4-x pb-4 justify-center">	
-					<a 
-					href="https://www.linkedin.com/in/byron-huerta-olmos-9072b4219/"
-					target="_blank"
-					rel="noopener"
-					class="flex justify-center items-center pl-4" >
-					<div class="text-3xl md:text-4xl lg:text-5xl font-bold">
-						Hola, soy 
-						<span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-lime-300">
-							Byron Huerta
-						</span>
-					</div>
-					</a> 
-				</h1>
-				<h2 class=" text-base md:text-lg lg:text-xl opacity-90 lg:my-5 flex justify-center flex-col lg:flex-row items-center text-wrap">
-					<span class=" mr-0 lg:mr-3  " >Egresado en  Ingeniería en Informática</span> <Badge>Disponible para trabajar</Badge>
-				</h2>
+				
+				<div class=" relative bg-gradient-to-r from-gray-800 to-slate-800  border-2 border-slate-600 p-4 rounded-xl sm:rounded-full z-10">
 
-				<nav class="flex gap-4 mt-6 flex-wrap justify-center">
-					<Socialpill href="/Doc/Byron_CV.pdf" download="ByronHuerta_CV">
-						<Download class="size-5  lg:size-6 "/> <p class="text-sm md:text-base">Descargar CV</p>				
-					</Socialpill>
-					<Socialpill href="https://www.linkedin.com/in/byron-huerta-olmos-9072b4219/">
-						<Likedin class="size-5 lg:size-6"/> <p class="text-sm md:text-base">Likedin</p>					
-					</Socialpill>
-					<Socialpill href="https://github.com/LegenB">
-						<GitHub class="size-5 lg:size-6"/> <p class="text-sm md:text-base">GitHub</p>					
-					</Socialpill>
 					
-				</nav>
+					<h1 class="text-white text-xl md:text-3xl lg:text-4xl font-bold flex flex-row justify-center">	
+						<a 
+						href="https://www.linkedin.com/in/byron-huerta-olmos-9072b4219/"
+						target="_blank"
+						rel="noopener"
+						class="flex justify-center items-center pl-4" >
+						<div class="text-3xl md:text-4xl lg:text-5xl font-bold">
+							Hola, soy 
+							<span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-lime-300">
+								Byron Huerta
+							</span>
+						</div>
+						</a> 
+					</h1>
+					<div class=" -mt-5 ">
+						<h2 class=" text-base md:text-lg lg:text-xl opacity-90 flex justify-center flex-col lg:flex-row items-center text-wrap">
+							<span class=" mr-0 lg:mr-3  " >Egresado en  Ingeniería en Informática</span> <Badge>Disponible para trabajar</Badge>
+						</h2>
+		
+						<nav class="flex gap-4 mt-6 flex-wrap justify-center">
+							<Socialpill href="/Doc/Byron_CV.pdf" download="ByronHuerta_CV">
+								<Download class="size-5  lg:size-6 "/> <p class="text-sm md:text-base">Descargar CV</p>				
+							</Socialpill>
+							<Socialpill href="https://www.linkedin.com/in/byron-huerta-olmos-9072b4219/">
+								<Likedin class="size-5 lg:size-6"/> <p class="text-sm md:text-base">Likedin</p>					
+							</Socialpill>
+							<Socialpill href="https://github.com/LegenB">
+								<GitHub class="size-5 lg:size-6"/> <p class="text-sm md:text-base">GitHub</p>					
+							</Socialpill>
+							
+						</nav>
+
+					</div>
+					
+
+				</div>
+				<div class="relative flex justify-center items-center z-0 "> 
+					
+					<div class="w-0 h-0 -mt-14  
+						border-l-[90px] border-l-transparent rounded-l-2xl
+						sm:border-b-[250px] sm:border-b-yellow-200/40 border-t-[250px] border-t-orange-400/40 
+						sm:border-t-0 sm:border-t-yellow-200/40
+						border-r-[90px] border-r-transparent  rounded-r-2xl">
+					</div>
+
+				</div>
+				
 				
 			</section>
 		
